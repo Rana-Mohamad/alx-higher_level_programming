@@ -11,4 +11,3 @@ def print_matrix_integer(matrix=[[]]):
                         "{:d}".format(submatrix[i]),
                         end=" " if i != len(submatrix) - 1 else "\n"
                     )
-            print()
