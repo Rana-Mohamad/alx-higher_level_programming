@@ -31,3 +31,7 @@ TypeError: a must be an integer
 Traceback (most recent call last):
   ...
 TypeError: b must be an integer
+>>> add_integer(9999999999, 99999999999)
+109999999998
+>>> add_integer(999999.99999999)
+1000097
