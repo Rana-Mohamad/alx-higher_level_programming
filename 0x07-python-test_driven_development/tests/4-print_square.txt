@@ -12,7 +12,6 @@ Traceback (most recent call last):
   ...
 TypeError: size must be an integer
 >>> square(0)
-<BLANKLINE>
 >>> square(-1)
 Traceback (most recent call last):
   ...
