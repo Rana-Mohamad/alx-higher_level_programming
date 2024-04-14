@@ -18,7 +18,7 @@ TypeError: div must be a number
 >>> matrix_div(matrix, 2)
 Traceback (most recent call last):
   ...
-TypeError: matrix must be a matrix(list of lists) of integers/floats
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 >>> matrix = [[1, 2, 3], [4]]
 >>> matrix_div(matrix, 2)
 Traceback (most recent call last):
