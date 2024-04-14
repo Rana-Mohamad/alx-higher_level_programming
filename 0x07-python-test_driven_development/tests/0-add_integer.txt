@@ -35,3 +35,15 @@ TypeError: b must be an integer
 109999999998
 >>> add_integer(999999.99999999)
 1000097
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+  ...
+OverflowError: cannot convert float infinity to integer
+>>> add_integer(-float('inf'))
+Traceback (most recent call last):
+  ...
+OverflowError: cannot convert float infinity to integer
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+  ...
+ValueError: cannot convert float NaN to integer
