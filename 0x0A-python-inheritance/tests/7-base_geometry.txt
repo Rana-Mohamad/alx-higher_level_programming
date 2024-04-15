@@ -56,3 +56,11 @@ TypeError: john must be an integer
 Traceback (most recent call last):
   ...
 TypeError: john must be an integer
+>>> bg.integer_validator(None, None)
+Traceback (most recent call last):
+  ...
+TypeError: None must be an integer
+>>> bg.integer_validator(None, -5.25)
+Traceback (most recent call last):
+  ...
+TypeError: None must be an integer
