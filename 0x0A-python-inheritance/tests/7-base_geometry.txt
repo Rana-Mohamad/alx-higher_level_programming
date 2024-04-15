@@ -33,3 +33,22 @@ TypeError: integer_validator() missing 2 required positional arguments: 'name' a
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
+>>> bg.integer_validator("", 3)
+>>> bg.integer_validator(None, 3)
+>>> bg.integer_validator("john", None)
+Traceback (most recent call last):
+  ...
+TypeError: john must be an integer
+>>> bg.integer_validator("john", {5})
+Traceback (most recent call last):
+  ...
+TypeError: john must be an integer
+>>> bg.integer_validator("john", (2))
+>>> bg.integer_validator("john", (2, 3))
+Traceback (most recent call last):
+  ...
+TypeError: john must be an integer
+>>> bg.integer_validator("john", [5])
+Traceback (most recent call last):
+  ...
+TypeError: john must be an integer
