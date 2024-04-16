@@ -36,17 +36,7 @@ class Square(Rectangle):
 
         return self.__size * self.__size
 
-    def __init__(self):
-        '''Represent a string.'''
-
-        return "[Square] " + str(self.__size) + "/" + str(self.__size)
-
-    def area(self):
-        '''Calc the square area.'''
-
-        return self.__size * self.__size
-
-    def __init__(self):
+    def __str__(self):
         '''Represent a string.'''
 
         return "[Square] " + str(self.__size) + "/" + str(self.__size)
