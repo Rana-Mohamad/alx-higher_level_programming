@@ -5,5 +5,5 @@
 def write_file(filename="", text=""):
     '''Writes to file and returns the number of charecters written.'''
 
-    with open(filename, "r+", encoding='UTF-8') as fl:
+    with open(filename, "w", encoding='UTF-8') as fl:
         return fl.write(text)
