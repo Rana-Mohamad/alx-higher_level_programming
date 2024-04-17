@@ -6,7 +6,13 @@ class Student:
     '''Student class.'''
 
     def __init__(self, first_name, last_name, age):
-        '''Constructor.'''
+        '''Constructor.
+
+        Args:
+            first_name: the first name of the student.
+            last_name: the last name of the student.
+            age: the student age.
+        '''
 
         self.first_name = first_name
         self.last_name = last_name
