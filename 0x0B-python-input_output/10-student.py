@@ -25,6 +25,6 @@ class Student:
         '''
 
         if (type(attrs) is list and all(type(elm) is str for elm in attrs)):
-            return [key: getattr(self, key)
-                    for key in attrs if hasattr(self, key)]
+            return {key: getattr(self, key)
+                    for key in attrs if hasattr(self, key)}
         return self.__dict__
