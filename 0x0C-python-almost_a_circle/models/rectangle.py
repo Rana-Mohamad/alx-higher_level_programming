@@ -81,3 +81,4 @@ class Rectangle(Base):
         '''Returns the rectangle.'''
         string = ""
         string += "\n".join('#' * self.__width for h in range(self.__height))
+        return string
