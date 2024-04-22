@@ -72,3 +72,7 @@ class Rectangle(Base):
             raise ValueError("{} must be > 0".format(attrname))
         elif (not flag and value < 0):
             raise ValueError("{} must be >= 0".format(attrname))
+
+    def area(self):
+        '''Calculate the rectangle area.'''
+        return self.__width * self.__height
