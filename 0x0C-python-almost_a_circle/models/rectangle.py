@@ -71,4 +71,4 @@ class Rectangle(Base):
         elif (flag and value <= 0):
             raise ValueError("{} must be > 0".format(attrname))
         elif (not flag and value < 0):
-            raise ValueError("{} must be >= 0".format(name))
+            raise ValueError("{} must be >= 0".format(attrname))
