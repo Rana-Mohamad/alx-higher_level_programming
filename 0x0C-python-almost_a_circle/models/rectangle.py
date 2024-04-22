@@ -79,6 +79,6 @@ class Rectangle(Base):
 
     def display(self):
         '''Returns the rectangle.'''
-        string = ""
-        string += "\n".join('#' * self.__width for h in range(self.__height))
+        string = "\n" * self.__y +\
+                 (' ' * self.__x + '#' * self.__width + "\n") * self.__height
         print(string, end='')
