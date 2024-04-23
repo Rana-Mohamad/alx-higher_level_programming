@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''Base module.'''
-from json import dumps
+from json import dumps, loads
 
 
 class Base:
@@ -32,3 +32,11 @@ class Base:
             list_objs = [obj.to_dictionary() for obj in list_objs]
         with open("{}.json".format(cls.__name__), "w", encoding='UTF-8') as fl:
             fl.write(cls.to_json_string(list_objs))
+
+    @staticmethod
+    def from_json_string(json_string):
+        '''Returns list of the JSON string representation json_string.'''
+        if (not json_string or json_string is None):
+            return []
+        else:
+            return loads(json_string)
