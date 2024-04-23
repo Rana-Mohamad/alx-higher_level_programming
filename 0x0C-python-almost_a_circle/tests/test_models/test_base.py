@@ -13,3 +13,7 @@ class TestBase(unittest.TestCase):
         '''Instantiates class.'''
         Base.Base_nb_objects = 0
         pass
+
+
+if __name__ == "__main__":
+    unittest.main()
