@@ -4,7 +4,7 @@ if (!process.argv[2] || !process.argv[3]) {
   console.log(0);
 } else {
   let biggest = parseInt(process.argv[2]);
-  let secBig = parseInt(process.argv[2]);
+  let secBig = parseInt(process.argv[3]);
   for (let i = 2; i < process.argv.length; i++) {
     if (parseInt(process.argv[i]) > biggest) {
       biggest = parseInt(process.argv[i]);
