@@ -21,6 +21,5 @@ if __name__ == "__main__":
         result.append(rows[i][0])
         i++
     joined = ", ".join(result)
-    print(joined)
     cur.close()
     db.close()
