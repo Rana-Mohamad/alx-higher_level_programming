@@ -15,8 +15,8 @@ if __name__ == "__main__":
 
     session = Session(engine)
 
-    for state in session.query(State).order_by(State.id).all():
-        for ch in state.name:
+    states = session.query(State).order_by(State.id).all():
+        for state in states:
             if ch == 'a':
                 session.delete(state)
     session.commit()
