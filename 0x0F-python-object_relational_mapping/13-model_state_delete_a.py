@@ -19,6 +19,5 @@ if __name__ == "__main__":
         for ch in state.name:
             if ch == 'a':
                 session.delete(state)
-                break
     session.commit()
     session.close()
