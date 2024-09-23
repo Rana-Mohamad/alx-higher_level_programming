@@ -1,19 +1,10 @@
 #!/usr/bin/node
 
-if (!process.argv[2] || !process.argv[3]) {
+if (process.argv.length <= 3) {
   console.log(0);
 } else {
-  let biggest = parseInt(process.argv[2]);
-  let secBig = parseInt(process.argv[2]);
-  for (let i = 2; i < process.argv.length; i++) {
-    if (parseInt(process.argv[i]) > biggest) {
-      biggest = parseInt(process.argv[i]);
-    }
-  }
-  for (let j = 2; j < process.argv.length; j++) {
-    if (parseInt(process.argv[j]) > secBig && parseInt(process.argv[j]) < biggest) {
-      secBig = parseInt(process.argv[j]);
-    }
-  }
-  console.log(secBig);
+  const args = process.argv.map(Number)
+    .slice(2, process.argv.length)
+    .sort((a, b) => a - b);
+  console.log(args[args.length - 2]);
 }
