@@ -19,7 +19,8 @@ if __name__ == "__main__":
     i = 0
     for row in rows:
         result.append(rows[i][0])
-        i++
+        i += 1
     joined = ", ".join(result)
+    print(joined)
     cur.close()
     db.close()
