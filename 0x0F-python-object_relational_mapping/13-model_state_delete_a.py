@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     session = Session(engine)
 
-    states = session.query(State).order_by(State.id).all():
+    states = session.query(State).order_by(State.id).all()
         for state in states:
             if ch == 'a':
                 session.delete(state)
